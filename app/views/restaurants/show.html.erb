@@ -1,0 +1,8 @@
+<h1><%= @restaurant.name %></h1>
+
+<p> Located at: <%= @restaurant.address %></p>
+<p>Rating: <%= @restaurant.rating %></p>
+
+<%= link_to 'Back to Restaurants', restaurants_path, class: 'blue' %>
+
+<%= link_to 'Remove this restaurant', destroy_restaurant_path(@restaurant),method: :delete, data: { confirm: "Are you sure?" } %>
